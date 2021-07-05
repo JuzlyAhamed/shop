@@ -99,17 +99,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <p>Please fill this form and submit to add product record to the database.</p>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="form-group">
-                            <label>product_Name</label>
+                            <label>Product Name</label>
                             <input type="text" name="product_name" class="form-control <?php echo (!empty($product_name_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $product_name; ?>">
                             <span class="invalid-feedback"><?php echo $product_name_err;?></span>
                         </div>
                         <div class="form-group">
-                            <label>price_code</label>
+                            <label>Price code</label>
                             <input type="text" name="price_code" class="form-control <?php echo (!empty($price_code_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $price_code; ?>">
                             <span class="invalid-feedback"><?php echo $price_code_err;?></span>
                         </div>
                         <div class="form-group">
-                            <label>unit_price</label>
+                            <label>Unit price</label>
                             <input type="text" name="unit_price" class="form-control <?php echo (!empty($unit_price_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $unit_price; ?>">
                             <span class="invalid-feedback"><?php echo $unit_price_err;?></span>
                         </div>
